@@ -88,7 +88,7 @@ p {
 
 .hero-img {
     height: 80vh;
-    /* margin: -7vh; */
+    margin-right: 3vh;
 }
 
 .hero-left-side {
@@ -101,7 +101,7 @@ p {
 } */
 
 .about-us-img {
-    border-radius: 10px;
+    /* border-radius: 10px; */
     /* margin-top: 10vh; */
     width: 40%;
 }
@@ -172,4 +172,28 @@ p {
   color: #009D7E;
   font-size: 4vh;
   margin-bottom: 1.5vh;
+}
+
+.incharge-message-container {
+  width: 80%;
+  margin: 120px auto;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+}
+
+.incharge-message-right-side {
+  width: 40%;
+  margin: 1vh auto;
+  height: 100%;
+}
+
+.incharge-message-img {
+  width: 40%;
+  /* border-radius: 10px; */
+}
+
+.incharge-message-heading {
+  font-size: 34px;
+  margin-bottom: 2vh;
 }
