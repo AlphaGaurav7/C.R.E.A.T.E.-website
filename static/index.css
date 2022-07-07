@@ -6,6 +6,11 @@
   font-weight: 400;
 }
 
+p {
+  font-size: 18px;
+  line-height: 2.5vh;
+}
+
 .navbar-filler{
     height: 10vh;
 }
@@ -90,35 +95,32 @@
     width: 50%;
 }
 
-.about-us {
+/* .about-us {
     width: 100%;
-}
+    height: min-content;
+} */
 
 .about-us-img {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 120%;
     border-radius: 10px;
+    /* margin-top: 10vh; */
+    width: 40%;
 }
 
 .about-us-container {
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 10vh auto;
     width: 80%;
-    height: 40vh;
+    /* height: 50vh; */
+    flex-wrap: wrap;
 }
 
 .about-us-right-side {
-    position: absolute; 
-    left: 45%;
+    /* margin-right: 10vw; */
+    margin: auto;
     height: 100%;
-    width: 45%;
-    font-size: 18px;
-    line-height: 2.5vh;
+    width: 40%;
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -127,5 +129,47 @@
 
 .about-us-subheading {
     font-size: 34px;
-    margin-bottom: 1vh;
+    margin-bottom: 3vh;
+}
+
+/* .objective {
+  width: 100%;
+  height: 40vh;
+} */
+
+.objective-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10vh auto 0;
+  width: 80%;
+  /* height: auto; */
+  flex-wrap: wrap;
+}
+
+.objective-left-side {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.objective-img {
+  overflow: hidden;
+  width: 30%;
+  /* margin-right: 10vw;
+  margin-top: -1vh; */
+  margin: 0 auto;
+}
+
+.objective-content {
+  margin-bottom: 6vh;
+}
+
+.objective-subheading {
+  color: #009D7E;
+  font-size: 4vh;
+  margin-bottom: 1.5vh;
 }
