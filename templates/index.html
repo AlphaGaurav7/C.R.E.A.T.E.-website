@@ -6,19 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Welcome to C.R.E.A.T.E.</title>
     <link rel="stylesheet" href="../static/index.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../node_modules/tw-elements/dist/css/index.min.css">
+    <link rel="stylesheet" href="../dist/output.css" />
   </head>
   <body>
     <!-- Navbar -->
@@ -26,14 +15,14 @@
     <nav
       class="main-navbar navbar navbar-expand-lg justify-center h-max py-2.5"
     >
-      <div class="navbar-main-container flex justify-evenly">
+      <div class="navbar-main-container justify-evenly mx-auto">
         <img
           src="../static/Incubation-Center-logo-colour-logo-1 1.png"
           alt=""
           class="navbar-img"
         />
         <div
-          class="navbar-links-container flex collapse navbar-collapse flex-grow items-center justify-center"
+          class="navbar-links-container flex flex-grow collapse navbar-collapse flex-grow items-center justify-center"
           id="navbarSupportedContent"
         >
           <ul
@@ -159,12 +148,8 @@
           </p>
         </div>
       </div>
-      <div class = "lg:col-span-3 col-span-4 col-start-2">
-        <img
-          src="../static/C.R.E.A.T 1.png"
-          alt=""
-          class="objective-img"
-        />
+      <div class="lg:col-span-3 col-span-4 col-start-2">
+        <img src="../static/C.R.E.A.T 1.png" alt="" class="objective-img" />
       </div>
     </div>
     <!-- Incharge's Message -->
@@ -183,6 +168,6 @@
         </p>
       </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+    <script src="../node_modules/tw-elements/dist/js/index.min.js"></script>
   </body>
 </html>
