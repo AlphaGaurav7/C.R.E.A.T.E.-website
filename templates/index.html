@@ -6,31 +6,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Welcome to C.R.E.A.T.E.</title>
     <link rel="stylesheet" href="../static/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
     <!-- Navbar -->
     <div class="navbar-filler"></div>
-    <nav class="main-navbar">
-      <div class="navbar-main-container">
+    <nav
+      class="main-navbar navbar navbar-expand-lg justify-center h-max py-2.5"
+    >
+      <div class="navbar-main-container flex justify-evenly">
         <img
           src="../static/Incubation-Center-logo-colour-logo-1 1.png"
           alt=""
+          class="navbar-img"
         />
-        <div class="navbar-links-container">
-          <a href="" class="navbar-link">Objective</a>
-          <a href="" class="navbar-link">Mentors</a>
-          <a href="" class="navbar-link">Startups</a>
-          <a href="" class="navbar-link">Contact Us</a>
+        <div
+          class="navbar-links-container flex collapse navbar-collapse flex-grow items-center justify-center"
+          id="navbarSupportedContent"
+        >
+          <ul
+            class="navbar-nav list-style-none flex flex-col w-full ml-auto justify-evenly"
+          >
+            <li class="nav-item mx-auto p-2">
+              <a href="" class="navbar-link">Objective</a>
+            </li>
+            <li class="nav-item mx-auto p-2">
+              <a href="" class="navbar-link">Mentors</a>
+            </li>
+            <li class="nav-item mx-auto p-2">
+              <a href="" class="navbar-link">Startups</a>
+            </li>
+            <li class="nav-item mx-auto p-2">
+              <a href="" class="navbar-link">Contact Us</a>
+            </li>
+          </ul>
         </div>
+        <button
+          class="navbar-toggler border-0 py-2 px-2.5 ml-auto"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            data-prefix="fas"
+            data-icon="bars"
+            class="w-6"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+          >
+            <path
+              fill="currentColor"
+              d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+            ></path>
+          </svg>
+        </button>
       </div>
     </nav>
     <!-- hero-section -->
     <div class="hero">
-      <div class="hero-main-container">
-        <div class="hero-left-side">
+      <div class="hero-main-container grid grid-cols-6">
+        <div
+          class="hero-left-side lg:col-span-3 lg:text-left col-span-6 text-center"
+        >
           <p class="section-heading">WE PREPARE STARTUPS FOR ACCELERATORS</p>
-
-          <p class="hero-subheading">
+          <p class="hero-subheading m-auto lg:ml-0 mb-[48px]">
             Are You Ready For Self Publishing Done Your Way?
           </p>
           <button class="hero-btn">Find How</button>
@@ -38,18 +95,21 @@
         <img
           src="../static/How-to-nurture-innovation 1.png"
           alt=""
-          class="hero-img"
+          class="hero-img lg:col-span-3 col-span-4 col-start-2"
         />
       </div>
     </div>
     <!-- About Us section -->
-    <div class="about-us-container">
+    <div class="about-us-container grid grid-cols-6">
       <img
         src="../static/IMG20220523182023 1.png"
         alt=""
-        class="about-us-img"
+        class="about-us-img lg:col-span-3 lg:col-start-auto col-span-4 col-start-2"
       />
-      <div class="about-us-right-side">
+
+      <div
+        class="about-us-right-side col-span-6 lg:col-span-3 lg:text-left text-center"
+      >
         <p class="section-heading">About Us</p>
         <div class="about-us-content">
           <p class="about-us-subheading">IIIT Lucknow</p>
@@ -70,8 +130,10 @@
       </div>
     </div>
     <!-- Objective -->
-    <div class="objective-container">
-      <div class="objective-left-side">
+    <div class="objective-container grid grid-cols-6">
+      <div
+        class="objective-left-side lg:col-span-3 lg:text-left col-span-6 text-center"
+      >
         <div class="objective-content">
           <p class="objective-subheading">OUR MISSION</p>
           <p>
@@ -97,7 +159,13 @@
           </p>
         </div>
       </div>
-      <img src="../static/C.R.E.A.T 1.png" alt="" class="objective-img" />
+      <div class = "lg:col-span-3 col-span-4 col-start-2">
+        <img
+          src="../static/C.R.E.A.T 1.png"
+          alt=""
+          class="objective-img"
+        />
+      </div>
     </div>
     <!-- Incharge's Message -->
     <div class="incharge-message-container">
@@ -115,5 +183,6 @@
         </p>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
   </body>
 </html>

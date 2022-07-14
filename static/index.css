@@ -8,18 +8,18 @@
 
 p {
   font-size: 18px;
-  line-height: 2.5vh;
+  line-height: 25px;
 }
 
 .navbar-filler{
-    height: 10vh;
+    height: 100px;
 }
 
 .main-navbar {
   position: fixed;
   top:0;
   width: 100%;
-  height: 10vh;
+  height: 100px;
   background-color: #e0e0e0;
   display: flex;
   align-items: center;
@@ -35,10 +35,14 @@ p {
 }
 
 .navbar-links-container {
-  width: 100%;
+  /* width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-evenly; */
+}
+
+.navbar-img {
+  height: 70px;
 }
 
 .navbar-link {
@@ -48,6 +52,7 @@ p {
 }
 
 .hero {
+  /* width: 80%; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -63,13 +68,14 @@ p {
 
 .section-heading {
   color: #ec6205;
-  font-size: 9vh;
-  line-height: 10vh;
-  margin-bottom: 4vh;
+  font-size: 80px;
+  line-height: 120%;
+  margin-bottom: 40px;
+  margin-top: 10px;
 }
 
 .hero-subheading {
-  font-size: 34px;
+  font-size: 200%;
   line-height: 41px;
   color: #005F99;
   margin-bottom: 48px;
@@ -87,12 +93,12 @@ p {
 }
 
 .hero-img {
-    height: 80vh;
-    margin-right: 3vh;
+    /* height: 80vh; */
+    /* margin-right: 3vh; */
 }
 
 .hero-left-side {
-    width: 50%;
+    /* width: 10%; */
 }
 
 /* .about-us {
@@ -103,7 +109,7 @@ p {
 .about-us-img {
     /* border-radius: 10px; */
     /* margin-top: 10vh; */
-    width: 40%;
+    height: 100%;
 }
 
 .about-us-container {
@@ -118,9 +124,8 @@ p {
 
 .about-us-right-side {
     /* margin-right: 10vw; */
-    margin: auto;
+    /* width: 105%; */
     height: 100%;
-    width: 40%;
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -148,7 +153,6 @@ p {
 }
 
 .objective-left-side {
-  width: 40%;
   display: flex;
   flex-direction: column;
   align-items: left;
@@ -157,20 +161,20 @@ p {
 }
 
 .objective-img {
-  overflow: hidden;
-  width: 30%;
+  width: 50%;
+  /* height: 100%; */
   /* margin-right: 10vw;
   margin-top: -1vh; */
-  margin: 0 auto;
+  margin: auto;
 }
 
 .objective-content {
-  margin-bottom: 6vh;
+  margin-bottom: 60px;
 }
 
 .objective-subheading {
   color: #009D7E;
-  font-size: 4vh;
+  font-size: 40px;
   margin-bottom: 1.5vh;
 }
 
