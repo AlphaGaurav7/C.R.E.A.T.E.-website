@@ -4120,7 +4120,7 @@ p {
   font-size: 4vw;
   line-height: 120%;
   margin-bottom: 40px;
-  margin-top: 10px;
+  margin-top: 50px;
 }
 
 .hero-subheading {
@@ -4155,10 +4155,16 @@ p {
     height: min-content;
 } */
 
+.about-us-right-side .section-heading{
+  margin-top: 10px;
+}
+
 .about-us-img {
   /* border-radius: 10px; */
   /* margin-top: 10vh; */
-  height: 100%;
+  width: 500px;
+  /* height: 100%; */
+  margin: auto;
 }
 
 .about-us-container {
@@ -4195,7 +4201,7 @@ p {
 }
 
 .objective-img {
-  width: 60%;
+  width: 500px;
   /* height: 100%; */
   /* margin-right: 10vw;
   margin-top: -1vh; */
@@ -4221,9 +4227,6 @@ p {
   /* width: 40%; */
   /* margin: 1vh auto; */
   /* height: 100%; */
-}
-
-.incharge-message-img {
 }
 
 .incharge-message-heading {
@@ -4305,6 +4308,14 @@ p {
 @media screen and (min-width: 1024px) {
   .mentor-card {
     width: 25vw;
+  }
+
+  .about-us-img{
+    padding-right: 50px;
+  }
+
+  .incharge-message-img {
+    padding-right: 50px;
   }
 }
 
