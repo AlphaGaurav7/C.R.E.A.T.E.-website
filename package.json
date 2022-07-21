@@ -4,5 +4,22 @@
   },
   "dependencies": {
     "tw-elements": "^1.0.0-alpha12"
-  }
+  },
+  "name": "c.r.e.a.t.e.-website",
+  "description": "Files and setup for the development of the website for the incubation centre at IIIT Lucknow.",
+  "version": "1.0.0",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlphaGaurav7/C.R.E.A.T.E.-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlphaGaurav7/C.R.E.A.T.E.-website/issues"
+  },
+  "homepage": "https://github.com/AlphaGaurav7/C.R.E.A.T.E.-website#readme"
 }
