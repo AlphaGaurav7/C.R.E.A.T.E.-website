@@ -1,11 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 * {
   padding: 0;
   margin: 0;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
 }
 
@@ -14,13 +13,13 @@ p {
   line-height: 25px;
 }
 
-.navbar-filler{
-    height: 100px;
+.navbar-filler {
+  height: 100px;
 }
 
 .main-navbar {
   position: fixed;
-  top:0;
+  top: 0;
   width: 100%;
   /* height: 100px; */
   background-color: #e0e0e0;
@@ -73,28 +72,28 @@ p {
 .hero-subheading {
   font-size: 200%;
   line-height: 41px;
-  color: #005F99;
+  color: #005f99;
   margin-bottom: 48px;
   width: 70%;
 }
 
 .hero-btn {
-    all: unset;
-    background-color: #FFC300;
-    height: 71px;
-    width: 252px;
-    border-radius: 5px;
-    text-align: center;
-    font-size: 34px;
+  all: unset;
+  background-color: #ffc300;
+  height: 71px;
+  width: 252px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 34px;
 }
 
 .hero-img {
-    /* height: 80vh; */
-    /* margin-right: 3vh; */
+  /* height: 80vh; */
+  /* margin-right: 3vh; */
 }
 
 .hero-left-side {
-    /* width: 10%; */
+  /* width: 10%; */
 }
 
 /* .about-us {
@@ -102,33 +101,33 @@ p {
     height: min-content;
 } */
 
-.about-us-right-side .section-heading{
+.about-us-right-side .section-heading {
   margin-top: 10px;
 }
 
 .about-us-img {
-    /* border-radius: 10px; */
-    /* margin-top: 10vh; */
-    width: 500px;
-    /* height: 100%; */
-    margin: auto;
+  /* border-radius: 10px; */
+  /* margin-top: 10vh; */
+  width: 500px;
+  /* height: 100%; */
+  margin: auto;
 }
 
 .about-us-container {
-    margin: 10vh auto;
-    width: 80%;
-    /* height: 50vh; */
+  margin: 10vh auto;
+  width: 80%;
+  /* height: 50vh; */
 }
 
 .about-us-right-side {
-    /* margin-right: 10vw; */
-    /* width: 105%; */
-    height: 100%;
+  /* margin-right: 10vw; */
+  /* width: 105%; */
+  height: 100%;
 }
 
 .about-us-subheading {
-    font-size: 34px;
-    margin-bottom: 3vh;
+  font-size: 34px;
+  margin-bottom: 3vh;
 }
 
 /* .objective {
@@ -160,9 +159,9 @@ p {
 }
 
 .objective-subheading {
-  color: #009D7E;
+  color: #009d7e;
   font-size: 40px;
-  margin-bottom: 1.5vh;
+  margin-bottom: 30px;
 }
 
 .incharge-message-container {
@@ -184,7 +183,7 @@ p {
 }
 
 .meet-our-mentors {
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
   height: min-content;
 }
 
@@ -234,13 +233,13 @@ p {
 }
 
 .mentor-name {
-  color: #005F99;
+  color: #005f99;
   font-size: 30px;
   padding: 20px 0;
   margin: auto 0;
 }
 
-.card-container {
+.mentor-card-container {
   width: 80%;
   display: flex;
   flex-wrap: wrap;
@@ -248,20 +247,167 @@ p {
   margin: auto;
 }
 
+.impact {
+  height: min-content;
+}
+
+.impact-container {
+  margin: auto;
+  width: 80%;
+  height: min-content;
+  text-align: center;
+}
+
+.impact-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.impact-card {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin: 2% 5%;
+}
+
+.impact-img-container {
+  position: relative;
+  height: 250px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.impact-img-background {
+  position: absolute;
+  background-color: #d9d9d9;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+.impact-img {
+  z-index: 1;
+  height: 150px;
+  width: 150px;
+}
+
+.impact-card-heading {
+  font-size: 30px;
+  margin-top: 40px;
+  color: #005f99;
+}
+
+.our-startups {
+  background-color: #d9d9d9;
+  height: min-content;
+}
+
+.our-startups-container {
+  height: min-content;
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  padding: 1px 0 20px;
+}
+
+.startups-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.startup-logo {
+  width: 300px;
+  padding: 20px;
+}
+
+.testimonials {
+  padding: 20px;
+}
+
+.testimonial-card {
+  height: 400px;
+  border-radius: 5%;
+  transform: scale(0.8, 0.8);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.splide__pagination__page {
+  background: #000;
+}
+
+.splide__pagination__page.is-active {
+  background: rgb(111, 111, 111);
+}
+
 @media screen and (min-width: 1024px) {
   .mentor-card {
     width: 25vw;
   }
-  .about-us-img{
+  .about-us-img {
     padding-right: 50px;
   }
   .incharge-message-img {
     padding-right: 50px;
-  }  
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .mentor-image {
+    margin: auto;
+  }
+  .section-heading {
+    font-size: 10vw;
+    margin-bottom: 20px;
+  }
+  .hero-subheading {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .objective-subheading {
+    margin-bottom: 20px;
+  }
+  .about-us-right-side .section-heading {
+    margin-top: 50px;
+  }
 }
 
 @media screen and (max-width: 768px) {
-.mentor-image{
-  margin: auto;
-}
+  .mentor-image {
+    margin: auto;
+  }
+  .mentor-card {
+    padding: 20px 20px;
+  }
+  .mentor-card-container {
+    width: 80vw;
+  }
+  .section-heading {
+    font-size: 10vw;
+    margin-bottom: 20px;
+  }
+  .hero-subheading {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .objective-subheading {
+    margin-bottom: 20px;
+  }
+  .about-us-right-side .section-heading {
+    margin-top: 50px;
+  }
+  .impact-card {
+    width: 90%;
+  }
 }
