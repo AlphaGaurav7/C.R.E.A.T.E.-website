@@ -5,69 +5,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Welcome to C.R.E.A.T.E.</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" defer />
     <link
       rel="stylesheet"
-      href="../node_modules/tw-elements/dist/css/index.min.css" />
-    <link rel="stylesheet" href="../node_modules/@splidejs/splide/dist/css/splide.min.css">
+      href="../node_modules/tw-elements/dist/css/index.min.css"
+    />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet" type="text/css">
+    
     <link rel="stylesheet" href="../dist/output.css" />
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
-    </style>
+    <link rel="stylesheet" href="kool.css">
   </head>
   <body>
     <!-- Navbar -->
-    <div class="navbar-filler"></div>
-    <nav
-      class="main-navbar navbar navbar-expand-lg justify-center h-max py-2.5">
-      <div class="navbar-main-container justify-evenly mx-auto">
-        <img
-          src="../static/C.R.E.A.T.E  FINAL ICON.svg"
-          alt=""
-          class="navbar-img" />
-        <!-- class="navbar-links-container flex flex-grow collapse navbar-collapse items-center justify-center" -->
-        <div
-          class="navbar-links-container flex flex-grow collapse navbar-collapse items-center justify-center"
-          id="navbarSupportedContent">
-          <ul
-            class="navbar-nav list-style-none flex flex-col w-full ml-auto justify-evenly h-full">
-            <li class="nav-item mx-auto p-2">
-              <a href="" class="navbar-link">Objective</a>
-            </li>
-            <li class="nav-item mx-auto p-2">
-              <a href="" class="navbar-link">Mentors</a>
-            </li>
-            <li class="nav-item mx-auto p-2">
-              <a href="" class="navbar-link">Startups</a>
-            </li>
-            <li class="nav-item mx-auto p-2">
-              <a href="" class="navbar-link">Contact Us</a>
-            </li>
-          </ul>
-        </div>
-        <button
-          class="navbar-toggler border-0 py-2 px-2.5 ml-auto"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation">
-          <svg
-            aria-hidden="true"
-            focusable="false"
-            data-prefix="fas"
-            data-icon="bars"
-            class="w-6"
-            role="img"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 448 512">
-            <path
-              fill="currentColor"
-              d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path>
-          </svg>
-        </button>
-      </div>
-    </nav>
+    <div class="wrap">
+      <!-- Header -->
+      <header>
+         <div class="container">
+             <a href="/" class="brand">
+              <img
+              src="../static/C.R.E.A.T.E  FINAL ICON.svg"
+              alt=""
+              class="navbar-img"
+            />
+             </a>
+             <ul class="menu" id="menu">
+                 <li class="menu-item">
+                     <a href="/">
+                         <i class="fas fa-home"></i>Home
+                     </a>
+                 </li>
+                 <li class="menu-item">
+                     <a href="#About">
+                         <i class="fas fa-info-circle"></i>About
+                     </a>
+                 </li>
+                 <li class="menu-item">
+                     <a href="/services">
+                         <i class="fas fa-tasks"></i>Services
+                     </a>
+                 </li>
+                 <li class="menu-item">
+                     <a href="/products">
+                         <i class="fas fa-layer-group"></i>Subs
+                     </a>
+                 </li>
+                 <li class="menu-item">
+                     <a href="#Contact">
+                         <i class="fas fa-envelope"></i>Contact
+                     </a>
+                 </li>
+             </ul>
+
+             <div class="burger" id="burger" onclick="toggleMobile()">
+                 <i class="fas fa-bars" id="menu-icon"></i>
+             </div>
+             
+         </div>
+     </header>
+     <div class="development">
+         <h4>/C.R.E.A.T.E.-website
+             <a href="#About">About Page.
+             </a>
+         </h4>
+     </div>
+ </div>
     <!-- hero-section -->
     <div class="hero">
       <div class="hero-main-container grid grid-cols-6">
@@ -81,7 +83,8 @@
         <img
           src="../static/How-to-nurture-innovation 1.png"
           alt=""
-          class="hero-img lg:col-span-3 col-span-6 mx-auto" />
+          class="hero-img lg:col-span-3 col-span-6 mx-auto"
+        />
       </div>
     </div>
     <!-- About Us section -->
@@ -89,9 +92,10 @@
       <img
         src="../static/IMG20220523182023 1.png"
         alt=""
-        class="about-us-img lg:col-span-3 col-span-6 mx-auto" />
-
-      <div class="about-us-right-side col-span-6 lg:col-span-3">
+        class="about-us-img lg:col-span-3 col-span-6 mx-auto"
+      />
+      <div  class="about-us-right-side col-span-6 lg:col-span-3">
+        <div><a id="About"></a></div>
         <p class="section-heading">About Us</p>
         <div class="about-us-content">
           <p class="about-us-subheading">IIIT Lucknow</p>
@@ -143,7 +147,8 @@
         <img
           src="../static/C.R.E.A.T.E  FINAL LOGO.svg"
           alt=""
-          class="objective-img" />
+          class="objective-img"
+        />
       </div>
     </div>
     <!-- Incharge's Message -->
@@ -151,7 +156,8 @@
       <img
         src="../static/mentor-5 1.png"
         alt=""
-        class="incharge-message-img lg:col-span-3 col-span-6 mx-auto" />
+        class="incharge-message-img lg:col-span-3 col-span-6 mx-auto"
+      />
       <div class="incharge-message-right-side lg:col-span-3 col-span-6">
         <p class="incharge-message-heading">INCHARGE'S MESSAGE</p>
         <p class="incharge-message-content">
@@ -168,7 +174,7 @@
     <div class="meet-our-mentors flex justify-center">
       <div class="meet-our-mentors-container py-10">
         <p class="section-heading text-center">Meet Our Mentors</p>
-        <div class="mentor-card-container">
+        <div class="card-container">
           <div class="mentor-card my-10 flex">
             <img src="../static/Mr 1.png" alt="" class="mentor-image" />
             <p class="mentor-name">Dr. Ranjan Kumar</p>
@@ -214,8 +220,7 @@
                 ><img src="../static/instagram.svg" alt=""
               /></a>
             </div>
-          </div>
-          <div class="mentor-card my-10 flex">
+          </div><div class="mentor-card my-10 flex">
             <img src="../static/Mr 1.png" alt="" class="mentor-image" />
             <p class="mentor-name">Dr. Ranjan Kumar</p>
             <ul>
@@ -237,8 +242,7 @@
                 ><img src="../static/instagram.svg" alt=""
               /></a>
             </div>
-          </div>
-          <div class="mentor-card my-10 flex">
+          </div><div class="mentor-card my-10 flex">
             <img src="../static/Mr 1.png" alt="" class="mentor-image" />
             <p class="mentor-name">Dr. Ranjan Kumar</p>
             <ul>
@@ -260,8 +264,7 @@
                 ><img src="../static/instagram.svg" alt=""
               /></a>
             </div>
-          </div>
-          <div class="mentor-card my-10 flex">
+          </div><div class="mentor-card my-10 flex">
             <img src="../static/Mr 1.png" alt="" class="mentor-image" />
             <p class="mentor-name">Dr. Ranjan Kumar</p>
             <ul>
@@ -283,8 +286,7 @@
                 ><img src="../static/instagram.svg" alt=""
               /></a>
             </div>
-          </div>
-          <div class="mentor-card my-10 flex">
+          </div><div class="mentor-card my-10 flex">
             <img src="../static/Mr 1.png" alt="" class="mentor-image" />
             <p class="mentor-name">Dr. Ranjan Kumar</p>
             <ul>
@@ -306,8 +308,7 @@
                 ><img src="../static/instagram.svg" alt=""
               /></a>
             </div>
-          </div>
-          <div class="mentor-card my-10 flex">
+          </div><div class="mentor-card my-10 flex">
             <img src="../static/Mr 1.png" alt="" class="mentor-image" />
             <p class="mentor-name">Dr. Ranjan Kumar</p>
             <ul>
@@ -333,107 +334,82 @@
         </div>
       </div>
     </div>
-    <div class="impact">
-      <div class="impact-container">
-        <div class="section-heading">IMPACT</div>
-        <div class="impact-card-container">
-          <div class="impact-card">
-            <div class="impact-img-container">
-              <div class="impact-img-background"></div>
-              <img
-                src="../static/VectorImpactIconStartups.svg"
-                alt=""
-                class="impact-img" />
-            </div>
-            <div class="impact-card-heading">STARTUPS</div>
-          </div>
-          <div class="impact-card">
-            <div class="impact-img-container">
-              <div class="impact-img-background"></div>
-              <img
-                src="../static/VectorImpactIconStartups.svg"
-                alt=""
-                class="impact-img" />
-            </div>
-            <div class="impact-card-heading">STARTUPS</div>
-          </div>
-          <div class="impact-card">
-            <div class="impact-img-container">
-              <div class="impact-img-background"></div>
-              <img
-                src="../static/VectorImpactIconStartups.svg"
-                alt=""
-                class="impact-img" />
-            </div>
-            <div class="impact-card-heading">STARTUPS</div>
-          </div>
-          <div class="impact-card">
-            <div class="impact-img-container">
-              <div class="impact-img-background"></div>
-              <img
-                src="../static/VectorImpactIconStartups.svg"
-                alt=""
-                class="impact-img" />
-            </div>
-            <div class="impact-card-heading">STARTUPS</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="our-startups">
-      <div class="our-startups-container">
-        <div class="section-heading">Our Startups</div>
-        <div class="startups-flex">
-          <img src="../static/StartupLogo.png" alt="" class="startup-logo" />
-          <img src="../static/StartupLogo.png" alt="" class="startup-logo" />
-          <img src="../static/StartupLogo.png" alt="" class="startup-logo" />
-        </div>
-      </div>
-    </div>
-    <!-- <div class="testimonials">
-      <div class="testimonials-container">
-        <section class="splide" aria-label="Basic Structure Example">
-          <div class="splide__track">
-            <ul class="splide__list">
-              <li class="splide__slide">
-                <div class="testimonial-card">
-                  Slide 01
-                </div>
-              </li>
-              <li class="splide__slide">
-                <div class="testimonial-card">
-                  Slide 02
-                </div>
-              </li>
-              <li class="splide__slide">
-                <div class="testimonial-card">
-                  Slide 03
-                </div>
-              </li>
-              <li class="splide__slide">
-                <div class="testimonial-card">
-                  Slide 04
-                </div>
-              </li>
-              <li class="splide__slide">
-                <div class="testimonial-card">
-                  Slide 05
-                </div>
-              </li>
-            </ul>
-          </div>
-        </section>
-      </div>
-    </div> -->
-    <script src="../node_modules/tw-elements/dist/js/index.min.js"></script>
-    <script src="../node_modules/@splidejs/splide/dist/js/splide.js"></script>
-    <script>
-      var splide = new Splide(".splide", {
-        perPage: 3,
-        focus: 'center',
-      });
+    <!-- <script src="../node_modules/tw-elements/dist/js/index.min.js"></script> -->
 
-      splide.mount();
+    <script>
+      const toggleMobile = () => {
+	let menu = document.getElementById("menu");
+	let menuIcon = document.getElementById("menu-icon");
+
+	if (menuIcon.classList.contains("fa-bars")) {
+		menuIcon.classList.remove("fa-bars");
+		menuIcon.classList.add("fa-times");
+		menu.classList.add("mobile-menu");
+	} else {
+		menuIcon.classList.remove("fa-times");
+		menuIcon.classList.add("fa-bars");
+		menu.classList.remove("mobile-menu");
+	}
+};
+
     </script>
   </body>
+  <body class="body">
+    <footer class="footer_main">
+
+        <div class="footer-left">
+ 
+        <h3>The world of code</h3>
+ 
+        <p class="footer-links">
+        <a href="#">Home</a>
+    ·
+        <a href="#About">About us</a>
+    ·
+        <a href="#">Faq</a>
+        </p>
+ 
+        <p class="footer-company-name">The world of code &copy; 2019</p>
+        </div>
+ 
+        <div class="footer-center">
+ 
+        <div>
+        <i class="fa fa-map-marker"></i>
+        <p><span>Bakers Street</span> London, UK</p>
+        </div>
+ 
+        <div>
+          <div><a id="Contact"></a></div>
+        <i class="fa fa-phone"></i>
+        <p>+56 9987 987654</p>
+        </div>
+ 
+        <div>
+        <i class="fa fa-envelope"></i>
+        <p><a href="#">theworldofcodekk.com</a></p>
+        </div>
+ 
+        </div>
+ 
+        <div class="footer-right">
+ 
+        <p class="footer-company-about">
+        <span>About the company</span>
+   Welcome to the world of opensource contribution
+        </p>
+ 
+        <div class="footer-icons">
+ 
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <a href="#"><i class="fa fa-github"></i></a>
+ 
+        </div>
+ 
+        </div>
+ 
+        </footer>
+</body>
 </html>
